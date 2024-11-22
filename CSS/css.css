@@ -1,0 +1,42 @@
+.gridcontainer {
+    display: grid;
+    height: 100vh;
+    row-gap: 15px;
+    column-gap: 15px;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-areas:
+        'header header header'
+        'nav nav nav'
+        'section section section'
+        'section1 section1 section1'
+        'section2 section2 section2'
+        'section3 section3 section3'
+        'section4 section4 section4'
+        'footer footer footer'
+    ;
+}
+
+.index {
+    background-color: #e67e22;
+}
+
+.restaurant {
+    grid-area: section;
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+    padding: 15px;
+    gap: 4rem;
+}
+
+.header {
+    background-image: url(/GourmetGrove/misc/Middag.jpg);
+    text-align: center;
+    padding: 220px;
+    margin: 0%;
+    background-size: cover;
+    font-size: 3rem;
+    color:blanchedalmond  ;
+}
